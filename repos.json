@@ -1,9 +1,10 @@
-[  {
+[
+  {
     "kernelSource": {
-      "name": "linux-kernel",
-      "repo": "https://github.com/yanhuo26/android_kernel_xiaomi_sdm845.git",
-      "branch": "udc",
-      "device": "sdm845"
+      "name": "DogDayAndroid",
+      "repo": "https://github.com/LCM-MTK/android_kernel_mediatek_mt6761.git",
+      "branch": "lineage-20.0",
+      "device": "mt6761"
     },
     "withKernelSU": false,
     "toolchains": [
@@ -13,22 +14,49 @@
         "name": "gas"
       },
       {
-        "repo": "https://github.com/kdrag0n/proton-clang.git",
-        "branch": "master",
+        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+        "branch": "12",
         "name": "clang"
       }
     ],
     "params": {
       "ARCH": "arm64",
       "CROSS_COMPILE": "aarch64-linux-gnu-",
-      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
+      "CROSS_COMPILE_ARM32": "arm-linux-gnueabihf-",
+      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabihf-",
       "CLANG_TRIPLE": "aarch64-linux-gnu-",
       "AR": "",
       "CC": "clang"
+    }
+  },
+  {
+    "kernelSource": {
+      "name": "DogDay-KernelSU",
+      "repo": "https://github.com/LCM-MTK/android_kernel_mediatek_mt6761.git",
+      "branch": "lineage-20.0",
+      "device": "mt6761"
     },
-    "extraParams": {
-      "KEEP": ""
+    "withKernelSU": true,
+    "toolchains": [
+      {
+        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
+        "branch": "master",
+        "name": "gas"
+      },
+      {
+        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+        "branch": "12",
+        "name": "clang"
+      }
+    ],
+    "params": {
+      "ARCH": "arm64",
+      "CROSS_COMPILE": "aarch64-linux-gnu-",
+      "CROSS_COMPILE_ARM32": "arm-linux-gnueabihf-",
+      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabihf-",
+      "CLANG_TRIPLE": "aarch64-linux-gnu-",
+      "AR": "",
+      "CC": "clang"
     }
   }
 ]

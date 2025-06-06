@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "DogDayAndroid",
+      "name": "LCM-MTK",
       "repo": "https://github.com/LCM-MTK/android_kernel_mediatek_mt6761.git",
-      "branch": "lineage-20.0",
+      "branch": "lineage-16.0",
       "device": "mt6761"
     },
     "withKernelSU": false,
@@ -31,9 +31,9 @@
   },
   {
     "kernelSource": {
-      "name": "DogDay-KernelSU",
+      "name": "LCM_MTK-KernelSU",
       "repo": "https://github.com/LCM-MTK/android_kernel_mediatek_mt6761.git",
-      "branch": "lineage-20.0",
+      "branch": "lineage-16.0",
       "device": "mt6761"
     },
     "withKernelSU": true,
